@@ -1,7 +1,5 @@
 
  const axios = require('axios');
-const fs = require('fs');
-
 
 
 async function main (){
@@ -17,7 +15,8 @@ async function main (){
       }
     })
     const data = res.data;
-      console.log(`resolved: ${data.data}`);
+    
+      console.log(Array.from(data.data));
   }catch(e){
 
       console.log(e);

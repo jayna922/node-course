@@ -1,6 +1,6 @@
 
  const axios = require('axios');
-//const fs = require('fs');
+const fs = require('fs');
 
 
 
@@ -17,7 +17,7 @@ async function main (){
       }
     })
     const data = res.data;
-      console.log(`resolved: ${data}`);
+      console.log(`resolved: ${data.data}`);
   }catch(e){
 
       console.log(e);

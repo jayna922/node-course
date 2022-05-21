@@ -19,7 +19,7 @@ async function main (){
       console.log(Array.from(data.data));
   }catch(e){
 
-      console.log(e);
+      console.error(e);
   }
 
 
